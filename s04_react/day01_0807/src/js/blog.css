@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.header > h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 3rem;
+}
+
+.logIn {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 100%;
+}
+
+.logIn > a {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.logIn > a:hover {
+    cursor: pointer;
+}
+
+form {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ccc;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form > input {
+    border: none;
+    box-shadow: 0 0 0 2px #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+}
+
+form > button {
+    display: none;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.aside {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.userInfo {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ccc;
+    margin-bottom: 10px;
+}
+
+.mainMenu {
+    width: 100%;
+    height: calc(100% - 280px);
+    box-shadow: 0 0 5px 2px #ccc;
+    border-radius: 10px;
+}
+
+.section {
+    width: calc(100% - 280px);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ccc;
+}
