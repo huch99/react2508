@@ -6,6 +6,7 @@ const shapes = {
         [[1, 1, 1, 1]],
         [[1], [1], [1], [1]]
     ],
+
     O: [
         [[1, 1], [1, 1]]
     ],
@@ -42,8 +43,8 @@ const shapes = {
     ]
 };
 
-const Rows = 20;
-const Cols = 10;
+const Rows = 20; //가로 줄 20
+const Cols = 10; // 세로 줄 10
 
 // 초기 격자판 생성
 const createBoard = () => Array.from({ length: Rows }, () => Array(Cols).fill(0));
