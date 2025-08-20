@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>중고차 거래 사이트</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>중고차 거래 사이트</h1>
+  </header>
+  <main>
+    <section id="car-form-section">
+      <h2>차량 등록</h2>
+      <form id="car-form">
+        <input type="text" id="car-name" placeholder="차량명" required>
+        <input type="number" id="car-year" placeholder="연식" required>
+        <input type="number" id="car-price" placeholder="가격(만원)" required>
+        <button type="submit">등록</button>
+      </form>
+    </section>
+    <section id="car-list-section">
+      <h2>차량 목록</h2>
+      <ul id="car-list"></ul>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
